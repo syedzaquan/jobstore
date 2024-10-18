@@ -1,0 +1,56 @@
+.header-ribbon {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: url('https://assets.jobstore.my/images/header/jobseeker_header_purple_bg.png') #f7f7f7 no-repeat center / cover;
+    .header-ribbon-container {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        
+        .ribbon-text {
+            display: flex;
+            gap: .75rem;
+
+            h4 {
+                color: #fff;
+                font-size: 1rem;
+            }
+
+            &:last-child {
+                
+                h4 {
+                    color: #000;
+                    font-size: .85rem;
+                    font-weight: 500;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .ribbon-prompt {
+                span {
+                    background-color: $purple;
+                    padding: .05rem .7rem;
+                    font-size: 0.8rem;
+                    line-height: 20px;
+                    font-weight: 600;
+                    color: $white;
+                    border: 2px solid $purple;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    @include transition;
+
+                    &:hover {
+                        background-color: $white;
+                        color: $purple;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+}

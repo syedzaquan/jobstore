@@ -1,0 +1,2060 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap';
+
+body {
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-family: noto sans, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    text-rendering: auto
+}
+
+a {
+    color: #0704e1;
+    text-decoration: none;
+    outline: none
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+    outline: none
+}
+
+p {
+    font-size: .8rem;
+    margin: 0;
+    padding: 0
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+    font-size: 13px;
+    font-family: noto sans, sans-serif
+}
+
+:-moz-placeholder {
+    color: #888;
+    font-size: 13px;
+    font-family: noto sans, sans-serif
+}
+
+::-moz-placeholder {
+    color: #888;
+    font-size: 13px;
+    font-family: noto sans, sans-serif
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset
+}
+
+.index-mobile-search {
+    display: none
+}
+
+.mobile-footer {
+    display: none
+}
+
+.index_mobile_banner {
+    display: none;
+    width: 90%;
+    height: 100px;
+    background: url('https://assets.jobstore.my/images/header/jobseeker_header_banner_bg.png') no-repeat center left 25%/cover;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    margin: 1rem auto 2rem;
+    position: relative;
+    z-index: 1000
+}
+
+.index_mobile_js_title {
+    display: inline-block;
+    width: 45%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    vertical-align: middle;
+    margin: 25px 0 25px 3%
+}
+
+.index_mobile_js_msg {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    line-height: 1rem;
+    font-size: .75rem;
+    font-weight: 600;
+    color: #333;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 5%
+}
+
+.index_mobile_js_btn {
+    display: block;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background: #4724d8;
+    border: 1px solid #4724d8;
+    border-radius: 10px;
+    float: right;
+    margin-top: 5px
+}
+
+.index_container {
+    display: block;
+    width: 100%
+}
+
+.index_trending_hash {
+    display: inline-block;
+    width: 75%;
+    line-height: 1rem;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 1.5rem 15px;
+    vertical-align: top
+}
+
+.index_trending_hash span {
+    display: inline-block;
+    color: #000;
+    margin: 0 3% .5rem 0
+}
+
+.index_trending_hash span:hover {
+    color: #0704e1
+}
+
+.index_block_arrow {
+    display: inline-block;
+    width: 22.5%;
+    text-align: right;
+    vertical-align: top
+}
+
+.index_job_arrow {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 1rem;
+    color: #ddd;
+    text-align: center;
+    background: #f1f1f1;
+    border: 1px solid #e6e5fc;
+    border-radius: 50px;
+    margin: -5px 5px 0
+}
+
+.arrow_on {
+    color: #333;
+    background: #f2f2fd
+}
+
+.arrow_on:hover {
+    color: #666;
+    background: #f5f4fd;
+    border: 1px solid #d0cef9;
+    cursor: pointer
+}
+
+.show {
+    display: block !important
+}
+
+.index_trending {
+    background: #dde7f0;
+    padding: 2rem 0
+}
+
+.index_trending_block {
+    display: block;
+    width: 1280px;
+    max-width: 98%;
+    margin: 0 auto;
+    position: relative
+}
+
+.index_job_box {
+    min-height: 375px
+}
+
+.index_job {
+    display: none;
+    width: 100%
+}
+
+#box1 {
+    display: block
+}
+
+#box2 {
+    display: none
+}
+
+.index_featured_block {
+    display: block;
+    width: 1280px;
+    max-width: 98%;
+    margin: 4rem auto
+}
+
+.index_featured_header {
+    display: block;
+    width: 98%;
+    line-height: 1rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 auto 2rem
+}
+
+.index_featured_subheader {
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #888;
+    vertical-align: middle;
+    margin-right: 1%;
+    float: right;
+    cursor: pointer
+}
+
+.index_featured_subheader:hover {
+    color: #000
+}
+
+.featured_block_job {
+    display: inline-block;
+    width: 39.5%;
+    margin: 0;
+    vertical-align: top
+}
+
+.featured_block {
+    display: inline-block;
+    width: 39.5%;
+    margin: 0;
+    vertical-align: top
+}
+
+.featured_brand {
+    display: inline-block !important;
+    width: 19%;
+    height: 360px;
+    background: url('https://assets.jobstore.my/images/layouts/featured/banner_js.jpg') #fff no-repeat center/cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 .5%;
+    vertical-align: top
+}
+
+.featured_brand img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px
+}
+
+.featured_each {
+    display: inline-block;
+    width: 36.5%;
+    height: 120px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5%;
+    margin: 0 1% 3% 1.5%;
+    vertical-align: top;
+    position: relative
+}
+
+.featured_each:hover {
+    background: #f8f8fe;
+    border: 1px solid #d0cef9;
+    -webkit-box-shadow: 0 0 5px 2px #ddd;
+    -moz-box-shadow: 0 0 5px 2px #ddd;
+    box-shadow: 0 0 5px 2px #ddd
+}
+
+#state-malaysia,
+#state-philippines,
+#state-hong-kong,
+#state-indonesia,
+#state-australia {
+    color: #000;
+    background: #f1f1f1;
+    border: 1px solid #000
+}
+
+#state-johor {
+    color: #3286bf;
+    background: #e5eff7;
+    border: 1px solid #3286bf
+}
+
+#state-kedah {
+    color: #f1b801;
+    background: #fdf7e5;
+    border: 1px solid #f1b801
+}
+
+#state-kelantan {
+    color: #060;
+    background: #9c9;
+    border: 1px solid #060
+}
+
+#state-melaka {
+    color: #fc5582;
+    background: #feeef2;
+    border: 1px solid #fc5582
+}
+
+#state-malacca {
+    color: #fc5582;
+    background: #feeef2;
+    border: 1px solid #fc5582
+}
+
+#state-negeri-sembilan {
+    color: #ec562f;
+    background: #fbddd5;
+    border: 1px solid #ec562f
+}
+
+#state-pahang {
+    color: #bb318c;
+    background: #f1d6e8;
+    border: 1px solid #bb318c
+}
+
+#state-perak {
+    color: #feb41f;
+    background: #fff0d2;
+    border: 1px solid #feb41f
+}
+
+#state-perlis {
+    color: #002879;
+    background: #ccd4e4;
+    border: 1px solid #002879
+}
+
+#state-penang {
+    color: #139fbb;
+    background: #d9f3f9;
+    border: 1px solid #139fbb
+}
+
+#state-pulau-pinang {
+    color: #139fbb;
+    background: #d9f3f9;
+    border: 1px solid #139fbb
+}
+
+#state-sabah {
+    color: #900808;
+    background: #e9cece;
+    border: 1px solid #900808
+}
+
+#state-sarawak {
+    color: #ed141;
+    background: #fef5d9;
+    border: 1px solid #ed141
+}
+
+#state-selangor {
+    color: #fe7341;
+    background: #fee3d9;
+    border: 1px solid #fe7341
+}
+
+#state-terengganu {
+    color: #7341fe;
+    background: #e3d9fe;
+    border: 1px solid #7341fe
+}
+
+#state-kuala-lumpur {
+    color: #144268;
+    background: #e9f2fa;
+    border: 1px solid #144268
+}
+
+#state-wp-kuala-lumpur {
+    color: #144268;
+    background: #e9f2fa;
+    border: 1px solid #144268
+}
+
+#state-federal-territory-of-kuala-lumpur {
+    color: #144268;
+    background: #e9f2fa;
+    border: 1px solid #144268
+}
+
+#state-labuan {
+    color: #00080;
+    background: #cccce5;
+    border: 1px solid #00080
+}
+
+#state-putrajaya {
+    color: #b39700;
+    background: #fffbe5;
+    border: 1px solid #b39700
+}
+
+.featured_colour_1 {
+    color: #0068af !important;
+    background: #cce3f3 !important;
+    border: 1px solid #0068af !important
+}
+
+.featured_colour_2 {
+    color: #f359ac !important;
+    background: #fde7f3 !important;
+    border: 1px solid #f359ac !important
+}
+
+.featured_colour_3 {
+    color: #5eb052 !important;
+    background: #eaf5e9 !important;
+    border: 1px solid #5eb052 !important
+}
+
+.featured_colour_4 {
+    color: #b39700 !important;
+    background: #fffbe5 !important;
+    border: 1px solid #b39700 !important
+}
+
+.featured_colour_5 {
+    color: #ef7532 !important;
+    background: #fdede5 !important;
+    border: 1px solid #ef7532 !important
+}
+
+.featured_colour_6 {
+    color: #528881 !important;
+    background: #edf3f2 !important;
+    border: 1px solid #528881 !important
+}
+
+.featured_colour_7 {
+    color: #873856 !important;
+    background: #f0e6ea !important;
+    border: 1px solid #873856 !important
+}
+
+.featured_colour_8 {
+    color: #325293 !important;
+    background: #e5e9f1 !important;
+    border: 1px solid #325293 !important
+}
+
+.featured_colour_9 {
+    color: #493838 !important;
+    background: #eae8e8 !important;
+    border: 1px solid #493838 !important
+}
+
+.featured_each_loc {
+    display: inline-block;
+    width: auto;
+    max-width: 75%;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    color: 3333;
+    text-align: center;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.featured_each_title {
+    width: auto;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #000;
+    margin: 1rem 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.featured_each_company {
+    display: block;
+    width: 80%;
+    font-size: .65rem;
+    font-weight: 400;
+    color: #000;
+    position: absolute;
+    bottom: 10%
+}
+
+.featured_each_company_name {
+    display: inline-block;
+    width: 72%;
+    line-height: .8rem;
+    padding-right: 2%;
+    vertical-align: middle
+}
+
+.featured_each_company_logo {
+    display: inline-block;
+    width: 24%;
+    min-height: 35px;
+    max-height: 35px;
+    object-fit: contain;
+    vertical-align: middle
+}
+
+.featured_employer {
+    display: block;
+    width: 101%;
+    margin-left: -.5%
+}
+
+.featured_emp_each {
+    display: inline-block;
+    width: 22.25%;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #0704e1;
+    border-radius: 5px;
+    margin: 0 1% 1%;
+    vertical-align: top;
+    position: relative
+}
+
+.featured_emp_box {
+    display: block;
+    max-width: 100%;
+    padding: 10%
+}
+
+.featured_emp_box img {
+    display: block;
+    max-width: 80%;
+    height: 65px;
+    margin: 0;
+    object-fit: scale-down;
+    margin-bottom: 1rem
+}
+
+.featured_emp_industry {
+    display: block;
+    width: 100%;
+    font-size: .8rem;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase
+}
+
+.featured_emp_company {
+    display: block;
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #000;
+    margin: 1rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.featured_emp_total {
+    display: block;
+    width: 80%;
+    font-size: .75rem;
+    color: #47c4fa;
+    position: absolute;
+    bottom: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.featured_emp_each:hover {
+    background: #fafcfe;
+    border: 1px solid #cee2f9;
+    border-top: 3px solid #0704e1;
+    cursor: pointer
+}
+
+.featured_emp_each:hover .featured_emp_company {
+    color: #0704e1
+}
+
+.featured_emp_each:hover .featured_emp_total {
+    color: #333
+}
+
+.index_featured_each {
+    display: inline-block;
+    width: 18.25%;
+    height: 285px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 .15% 1.5% 1%;
+    vertical-align: top;
+    position: relative
+}
+
+.index_featured_each:hover {
+    background: #f8f8fe;
+    border: 1px solid #d0cef9;
+    -webkit-box-shadow: 0 0 5px 2px #ddd;
+    -moz-box-shadow: 0 0 5px 2px #ddd;
+    box-shadow: 0 0 5px 2px #ddd
+}
+
+.index_featured_each_banner {
+    display: block;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px 5px 0 0
+}
+
+.index_featured_each_block {
+    display: block;
+    width: 85%;
+    margin: 1rem auto
+}
+
+.index_featured_each_loc {
+    display: inline-block;
+    width: auto;
+    max-width: 75%;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    color: 3333;
+    text-align: center;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.index_featured_each_title {
+    width: auto;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #000;
+    margin: 1rem 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.index_featured_each_company {
+    display: block;
+    width: 85%;
+    font-size: .65rem;
+    font-weight: 400;
+    color: #000;
+    position: absolute;
+    bottom: 5%
+}
+
+.index_featured_each_company_name {
+    display: inline-block;
+    width: 72%;
+    line-height: .8rem;
+    padding-right: 2%;
+    vertical-align: middle
+}
+
+.index_featured_each_company_logo {
+    display: inline-block;
+    width: 24%;
+    min-height: 35px;
+    max-height: 35px;
+    object-fit: contain;
+    vertical-align: middle
+}
+
+.index_featured_employer {
+    display: block;
+    width: 101%;
+    margin-left: -.5%
+}
+
+.index_featured_emp_each {
+    display: inline-block;
+    width: 22.25%;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #0704e1;
+    border-radius: 5px;
+    margin: 0 1% 1%;
+    vertical-align: top;
+    position: relative
+}
+
+.index_featured_emp_box {
+    display: block;
+    max-width: 100%;
+    padding: 10%
+}
+
+.index_featured_emp_box img {
+    display: block;
+    max-width: 80%;
+    height: 65px;
+    margin: 0;
+    object-fit: scale-down;
+    margin-bottom: 1rem
+}
+
+.index_featured_emp_industry {
+    display: block;
+    width: 100%;
+    font-size: .8rem;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase
+}
+
+.index_featured_emp_company {
+    display: block;
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #000;
+    margin: 1rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.index_featured_emp_total {
+    display: block;
+    width: 80%;
+    font-size: .75rem;
+    color: #47c4fa;
+    position: absolute;
+    bottom: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.index_featured_emp_each:hover {
+    background: #fafcfe;
+    border: 1px solid #cee2f9;
+    border-top: 3px solid #0704e1;
+    cursor: pointer
+}
+
+.index_featured_emp_each:hover .index_featured_emp_company {
+    color: #0704e1
+}
+
+.index_featured_emp_each:hover .featured_emp_total {
+    color: #333
+}
+
+.index_news_block {
+    display: block;
+    width: 1280px;
+    max-width: 90%;
+    margin: 0 auto 4rem
+}
+
+.index_news_header {
+    display: block;
+    width: 98%;
+    line-height: 1rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 auto 1.5rem
+}
+
+.index_news_subheader {
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #888;
+    vertical-align: middle;
+    margin-right: 1%;
+    float: right;
+    cursor: pointer
+}
+
+.index_news_subheader:hover {
+    color: #000
+}
+
+.news_box {
+    display: block;
+    width: 100%
+}
+
+.news_each {
+    display: inline-block;
+    width: 18.5%;
+    min-height: 250px;
+    text-align: left;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px 2px #ddd;
+    -moz-box-shadow: 0 0 10px 2px #ddd;
+    box-shadow: 0 0 10px 2px #ddd;
+    margin: 0 .5%;
+    vertical-align: top
+}
+
+.news_each:hover {
+    background: #fafcfe;
+    border: 1px solid #cee2f9;
+    cursor: pointer
+}
+
+.news_each:hover .news_title {
+    color: #0704e1
+}
+
+.news_content {
+    display: block;
+    max-width: 100%;
+    text-align: left;
+    padding: 8%
+}
+
+.news_banner {
+    display: block;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px 5px 0 0
+}
+
+.news_tag {
+    display: inline-block;
+    width: auto;
+    color: #333;
+    text-align: left;
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 2.5px 15px
+}
+
+.news_title {
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    margin: 1rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.news_date {
+    display: block;
+    width: 100%;
+    font-size: .7rem;
+    color: #666;
+    text-align: left
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .index_mobile_banner {
+        display: block
+    }
+
+    .index_block_arrow {
+        display: block;
+        width: 95%;
+        height: 35px;
+        margin: 1rem auto;
+        text-align: center;
+        float: none
+    }
+
+    .index_trending_hash {
+        display: block;
+        width: 98%;
+        height: 50px;
+        white-space: nowrap;
+        overflow: auto;
+        margin: 1rem 0 1rem 2%
+    }
+
+    .index_trending_hash span {
+        color: #444;
+        border: 1px solid #444;
+        border-radius: 25px;
+        padding: 5px 15px;
+        margin-right: .5rem
+    }
+
+    .index_trending_block {
+        text-align: center
+    }
+
+    .featured_block_job {
+        display: block;
+        width: 99%;
+        height: 400px;
+        margin: 0 auto
+    }
+
+    .featured_each {
+        display: inline-block;
+        width: 35.5%;
+        height: 150px;
+        text-align: left;
+        margin: 1%
+    }
+
+    .featured_brand {
+        width: 94%;
+        height: 485px;
+        border-radius: 10px;
+        margin: 2.5% .5%
+    }
+
+    .featured_block {
+        display: block;
+        width: 100%;
+        margin: 0
+    }
+
+    .featured_emp_each {
+        display: block;
+        width: 95%;
+        margin: 5% auto
+    }
+
+    .featured_each_title {
+        line-height: 1.5rem;
+        font-size: .85rem;
+        width: 98%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        margin: 1rem 0
+    }
+
+    .featured_each_company {
+        display: block;
+        max-width: 100%;
+        line-height: 1.25rem;
+        font-size: .8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .featured_each_company_name {
+        display: block;
+        width: 100%;
+        padding: 0
+    }
+
+    .featured_each_company_logo {
+        display: none
+    }
+
+    .index_featured_header,
+    .index_news_header {
+        width: 90%
+    }
+
+    .index_featured_subheader,
+    .index_news_subheader {
+        display: block;
+        margin: 1rem auto;
+        float: none
+    }
+
+    .news_box {
+        text-align: center
+    }
+
+    .news_each {
+        display: block;
+        width: 95%;
+        margin: 5% auto
+    }
+
+    .index_company_box {
+        display: block;
+        width: 96%;
+        height: auto;
+        overflow: hidden;
+        margin-left: 4%
+    }
+
+    #company_box1 {
+        display: block;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    #company_box2 {
+        display: block;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto;
+        margin: .5rem 0 0
+    }
+
+    .index_company_column {
+        display: inline-block;
+        width: 75%;
+        height: 350px
+    }
+
+    .index_featured_each {
+        display: inline-block;
+        width: 60%;
+        margin: 1rem 3% 1rem 0
+    }
+
+    .news_box {
+        width: auto;
+        height: 350px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 62%;
+        margin: 1rem 4% 1rem 0
+    }
+
+    .news_title {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:660px) {
+    .index_mobile_banner {
+        display: block
+    }
+
+    .index_block_arrow {
+        display: block;
+        width: 95%;
+        height: 35px;
+        margin: 1rem auto;
+        text-align: center;
+        float: none
+    }
+
+    .index_trending_hash {
+        display: block;
+        width: 98%;
+        height: 50px;
+        white-space: nowrap;
+        overflow: auto;
+        margin: 1rem 0 1rem 2%
+    }
+
+    .index_trending_hash span {
+        color: #444;
+        border: 1px solid #444;
+        border-radius: 25px;
+        padding: 5px 15px;
+        margin-right: .5rem
+    }
+
+    .index_trending_block {
+        text-align: center
+    }
+
+    .featured_block_job {
+        display: block;
+        width: 99%;
+        height: 400px;
+        margin: 0 auto
+    }
+
+    .featured_each {
+        display: inline-block;
+        width: 35.5%;
+        height: 150px;
+        text-align: left;
+        margin: 1%
+    }
+
+    .featured_brand {
+        width: 94%;
+        height: 485px;
+        border-radius: 10px;
+        margin: 2.5% .5%
+    }
+
+    .featured_block {
+        display: block;
+        width: 100%;
+        margin: 0
+    }
+
+    .featured_emp_each {
+        display: block;
+        width: 95%;
+        margin: 5% auto
+    }
+
+    .featured_each_title {
+        line-height: 1.5rem;
+        font-size: .85rem;
+        width: 98%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        margin: 1rem 0
+    }
+
+    .featured_each_company {
+        display: block;
+        max-width: 100%;
+        line-height: 1.25rem;
+        font-size: .8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .featured_each_company_name {
+        display: block;
+        width: 100%;
+        padding: 0
+    }
+
+    .featured_each_company_logo {
+        display: none
+    }
+
+    .index_featured_header,
+    .index_news_header {
+        width: 90%
+    }
+
+    .index_featured_subheader,
+    .index_news_subheader {
+        display: block;
+        margin: 1rem auto;
+        float: none
+    }
+
+    .news_box {
+        text-align: center
+    }
+
+    .news_each {
+        display: block;
+        width: 95%;
+        margin: 5% auto
+    }
+
+    .index_company_box {
+        display: block;
+        width: 96%;
+        height: auto;
+        overflow: hidden;
+        margin-left: 4%
+    }
+
+    #company_box1 {
+        display: block;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    #company_box2 {
+        display: block;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto;
+        margin: .5rem 0 0
+    }
+
+    .index_company_column {
+        display: inline-block;
+        width: 75%;
+        height: 350px
+    }
+
+    .index_featured_each {
+        display: inline-block;
+        width: 60%;
+        margin: 1rem 3% 1rem 0
+    }
+
+    .news_box {
+        width: auto;
+        height: 350px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 62%;
+        margin: 1rem 4% 1rem 0
+    }
+
+    .news_title {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+}
+
+@media only screen and (min-width: 661px) and (max-width:720px) and (orientation:portrait) {
+    .index_mobile_banner {
+        display: block
+    }
+
+    .index_mobile_js_title {
+        width: 40%;
+        font-size: 1.15rem
+    }
+
+    .index_mobile_js_msg {
+        width: 48%;
+        font-size: .85rem
+    }
+
+    .index_trending_hash {
+        width: 75%
+    }
+
+    .index_block_arrow {
+        width: 20%
+    }
+
+    .featured_block {
+        width: 65.5%
+    }
+
+    .featured_block_job {
+        width: 99%;
+        height: auto;
+        white-space: normal;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .index_job_box {
+        min-height: 250px
+    }
+
+    .featured_each {
+        display: inline-block;
+        height: 120px;
+        width: 36%;
+        margin: 0 1% 2.5%
+    }
+
+    .featured_each_title {
+        line-height: 1rem;
+        font-size: .85rem;
+        width: 98%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal
+    }
+
+    .featured_each_company {
+        line-height: 1rem;
+        font-size: .8rem
+    }
+
+    .featured_each_company_name {
+        display: block;
+        width: 100%;
+        padding: 0
+    }
+
+    .featured_each_company_logo {
+        display: none
+    }
+
+    #block1 {
+        display: inline-block;
+        width: 66%;
+        height: auto
+    }
+
+    #block2 {
+        display: none
+    }
+
+    #block3 {
+        display: none
+    }
+
+    #block4 {
+        display: inline-block;
+        width: 66%;
+        height: auto
+    }
+
+    .featured_brand {
+        width: 32%;
+        height: 335px;
+        margin: 0 .5%
+    }
+
+    .index_trending_block {
+        max-width: 92%
+    }
+
+    .index_featured_block,
+    .index_news_block {
+        max-width: 95%;
+        margin-left: 5%
+    }
+
+    .index_company_box {
+        width: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .index_featured_each {
+        width: 42%;
+        margin: 0 2.5% 5% 0
+    }
+
+    .news_box {
+        width: auto;
+        height: 365px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 42%;
+        margin: 1rem 2.5% 1rem 0
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width:920px) {
+    .index_mobile_js_title {
+        width: 40%;
+        font-size: 1.15rem
+    }
+
+    .index_mobile_js_msg {
+        width: 48%;
+        font-size: .85rem
+    }
+
+    .index_trending_hash {
+        width: 75%
+    }
+
+    .index_block_arrow {
+        width: 20%
+    }
+
+    .featured_block {
+        width: 65.5%
+    }
+
+    .index_job_box {
+        min-height: 250px
+    }
+
+    .featured_each {
+        display: inline-block;
+        height: 120px;
+        width: 37%;
+        margin: 0 1% 1rem
+    }
+
+    #block1 {
+        display: inline-block;
+        width: 66%;
+        height: auto
+    }
+
+    #block2 {
+        display: none
+    }
+
+    #block3 {
+        display: none
+    }
+
+    #block4 {
+        display: inline-block;
+        width: 66%;
+        height: auto
+    }
+
+    .featured_brand {
+        width: 32%;
+        height: 350px;
+        margin: 0 .5%
+    }
+
+    .index_trending_block {
+        max-width: 92%
+    }
+
+    .index_featured_block,
+    .index_news_block {
+        max-width: 95%;
+        margin-left: 4%
+    }
+
+    .index_company_box {
+        width: auto;
+        height: 325px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .index_featured_each {
+        width: 29%;
+        margin: 0 .5% 1.5% 1%
+    }
+
+    .index_featured_each_title {
+        white-space: normal
+    }
+
+    .index_featured_each_company_name {
+        white-space: normal
+    }
+
+    .news_box {
+        width: auto;
+        height: 335px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 30%;
+        margin: 1rem 1.25% 1rem 0
+    }
+}
+
+@media only screen and (min-width: 921px) and (max-width:1023px) {
+    .index_trending_hash {
+        width: 75%
+    }
+
+    .index_block_arrow {
+        width: 20%
+    }
+
+    .index_trending_block {
+        max-width: 92%
+    }
+
+    .index_featured_header {
+        width: 92%
+    }
+
+    .featured_block_job,
+    .featured_block {
+        width: 68%
+    }
+
+    .featured_each {
+        height: 150px;
+        padding: 15px 5%
+    }
+
+    .featured_brand {
+        width: 30%;
+        height: 380px;
+        margin: 0 0 0 .25%
+    }
+
+    #block2,
+    #block3 {
+        display: none
+    }
+
+    .index_news_block {
+        max-width: 95%;
+        margin-left: 5%
+    }
+
+    .index_company_box {
+        width: 92%;
+        height: 325px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto;
+        margin: 0 auto
+    }
+
+    .index_company_column {
+        display: inline-block;
+        width: 32%;
+        margin: 1rem 1.5% 1rem 0
+    }
+
+    .index_featured_each {
+        width: 32%;
+        margin: 0 1.5% 1.5% 0
+    }
+
+    .index_featured_each_title {
+        white-space: normal
+    }
+
+    .index_featured_each_company_name {
+        white-space: normal
+    }
+
+    .news_box {
+        width: 95%;
+        height: 355px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 32%;
+        margin: 1rem 1.5% 1rem 0
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1123px) {
+    .featured_brand {
+        height: 335px
+    }
+
+    .index_trending_block {
+        max-width: 92%
+    }
+
+    .index_featured_header {
+        width: 92%
+    }
+
+    .index_featured_block {
+        width: 92%
+    }
+
+    .index_company_box {
+        width: auto;
+        height: 325px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .index_company_column {
+        display: inline-block;
+        width: 31.5%;
+        margin: 1rem 1.5% 1rem 0
+    }
+
+    .index_featured_each {
+        width: 31.5%;
+        margin: 0 1.5% 1.5% 0
+    }
+
+    .index_featured_each_title {
+        white-space: normal
+    }
+
+    .index_featured_each_company_name {
+        white-space: normal
+    }
+
+    .news_box {
+        width: auto;
+        height: 365px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 31.5%;
+        margin: 1rem 1.5% 1rem 0
+    }
+}
+
+@media only screen and (min-width: 1124px) and (max-width:1280px) {
+
+    .index_trending_block,
+    .index_featured_block {
+        max-width: 90%
+    }
+
+    .featured_each {
+        height: 125px;
+        padding: 15px 5%
+    }
+
+    .featured_brand {
+        height: 325px
+    }
+
+    .index_company_box {
+        width: auto;
+        height: 325px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .index_company_column {
+        display: inline-block;
+        width: 28%;
+        margin: 1rem 2.5% 1rem 0
+    }
+
+    .index_featured_each {
+        width: 28%;
+        margin: 0 2.5% 1.5% 0
+    }
+
+    .index_featured_each_title {
+        white-space: normal
+    }
+
+    .index_featured_each_company_name {
+        white-space: normal
+    }
+
+    .news_box {
+        width: auto;
+        height: 355px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 28%;
+        margin: 1rem 2.5% 1rem 0
+    }
+}
+
+@media only screen and (min-width: 1281px) and (max-width:1439px) {
+
+    .index_trending_block,
+    .index_featured_block,
+    .index_featured_header {
+        max-width: 92%
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width:1500px) {}
+
+@media only screen and (device-width: 768px) {}
+
+@media only screen and (max-device-width: 480px) and (orientation:portrait) {
+    .index_mobile_banner {
+        display: block
+    }
+
+    .index_block_arrow {
+        display: block;
+        width: 95%;
+        height: 35px;
+        margin: 1rem auto;
+        text-align: center;
+        float: none
+    }
+
+    .index_trending_hash {
+        display: block;
+        width: 98%;
+        height: 50px;
+        white-space: nowrap;
+        overflow: auto;
+        margin: 1rem 0 1rem 2%
+    }
+
+    .index_trending_hash span {
+        color: #444;
+        border: 1px solid #444;
+        border-radius: 25px;
+        padding: 5px 15px;
+        margin-right: .5rem
+    }
+
+    .index_trending_block {
+        text-align: center
+    }
+
+    .featured_block_job {
+        display: block;
+        width: 99%;
+        height: 400px;
+        margin: 0 auto
+    }
+
+    .featured_each {
+        display: inline-block;
+        width: 35.5%;
+        height: 150px;
+        text-align: left;
+        margin: 1%
+    }
+
+    .featured_brand {
+        width: 94%;
+        height: 485px;
+        border-radius: 10px;
+        margin: 2.5% .5%
+    }
+
+    .featured_block {
+        display: block;
+        width: 100%;
+        margin: 0
+    }
+
+    .featured_emp_each {
+        display: block;
+        width: 95%;
+        margin: 5% auto
+    }
+
+    .featured_each_title {
+        line-height: 1.5rem;
+        font-size: .85rem;
+        width: 98%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        margin: 1rem 0
+    }
+
+    .featured_each_company {
+        display: block;
+        max-width: 100%;
+        line-height: 1.25rem;
+        font-size: .8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .featured_each_company_name {
+        display: block;
+        width: 100%;
+        padding: 0
+    }
+
+    .featured_each_company_logo {
+        display: none
+    }
+
+    .index_featured_header {
+        width: 90%
+    }
+
+    .index_featured_subheader,
+    .index_news_subheader {
+        display: block;
+        margin: 1rem auto;
+        float: none
+    }
+
+    .news_box {
+        text-align: center
+    }
+
+    .news_each {
+        display: block;
+        width: 95%;
+        margin: 5% auto
+    }
+
+    .index_company_box {
+        display: block;
+        width: 96%;
+        height: auto;
+        overflow: hidden;
+        margin-left: 4%
+    }
+
+    #company_box1 {
+        display: block;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    #company_box2 {
+        display: block;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto;
+        margin: .5rem 0 0
+    }
+
+    .index_company_column {
+        display: inline-block;
+        width: 47%;
+        height: 265px;
+        border-radius: 5px;
+        margin: 1rem 2% 1rem 0
+    }
+
+    .index_company_column_box {
+        height: 185px
+    }
+
+    .index_company_banner {
+        height: 55px;
+        border-radius: 5px 5px 0 0
+    }
+
+    .index_company_ext {
+        padding: 1rem 0 0;
+        margin: 0 auto
+    }
+
+    .index_featured_each {
+        width: 76%;
+        margin: 0 4% 8% 0
+    }
+
+    .index_news_header {
+        width: 95%
+    }
+
+    .news_box {
+        width: auto;
+        height: 335px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 80%;
+        margin: 1rem 4% 1rem 0
+    }
+
+    .news_title {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+}
+
+@media only screen and (max-device-width: 720px) and (orientation:landscape) {
+    .index_mobile_banner {
+        display: block
+    }
+
+    .index_mobile_js_title {
+        width: 40%;
+        font-size: 1.15rem
+    }
+
+    .index_mobile_js_msg {
+        width: 48%;
+        font-size: .85rem
+    }
+
+    .index_trending_hash {
+        width: 75%
+    }
+
+    .index_block_arrow {
+        width: 20%
+    }
+
+    .featured_block {
+        width: 65.5%
+    }
+
+    .featured_block_job {
+        width: 99%;
+        height: auto;
+        white-space: normal;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .index_job_box {
+        min-height: 250px
+    }
+
+    .featured_each {
+        display: inline-block;
+        height: 120px;
+        width: 36%;
+        margin: 0 1% 2.5%
+    }
+
+    .featured_each_title {
+        line-height: 1rem;
+        font-size: .85rem;
+        width: 98%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal
+    }
+
+    .featured_each_company {
+        line-height: 1rem;
+        font-size: .8rem
+    }
+
+    .featured_each_company_name {
+        display: block;
+        width: 100%;
+        padding: 0
+    }
+
+    .featured_each_company_logo {
+        display: none
+    }
+
+    #block1 {
+        display: inline-block;
+        width: 66%;
+        height: auto
+    }
+
+    #block2 {
+        display: none
+    }
+
+    #block3 {
+        display: none
+    }
+
+    #block4 {
+        display: inline-block;
+        width: 66%;
+        height: auto
+    }
+
+    .featured_brand {
+        width: 32%;
+        height: 335px;
+        margin: 0 .5%
+    }
+
+    .index_trending_block {
+        max-width: 92%
+    }
+
+    .index_featured_block,
+    .index_news_block {
+        max-width: 95%;
+        margin-left: 5%
+    }
+
+    .index_company_box {
+        width: auto;
+        height: 345px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .index_company_column {
+        display: inline-block;
+        width: 42%;
+        height: 300px;
+        margin: 1rem 2.5% 1rem 0
+    }
+
+    .index_company_banner {
+        height: 70px
+    }
+
+    .news_box {
+        width: auto;
+        height: 365px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow: auto
+    }
+
+    .news_each {
+        display: inline-block;
+        width: 42%;
+        margin: 1rem 2.5% 1rem 0
+    }
+}
