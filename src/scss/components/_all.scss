@@ -25,10 +25,11 @@ img {
 }
 
 .header-nav-container,
-.search-bar-container {
+.search-bar-container,
+.header-banner-info-container {
     max-width: 1280px;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
 
     @media (max-width: 480px) {
         padding: 40px;
@@ -100,12 +101,12 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.15rem 0;
+        padding: 0.75rem 0;
 
         .search-bar-column {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 1.25rem;
 
             &.search {
                 .brand-logo {
@@ -116,8 +117,8 @@ img {
                     display: flex;
                     align-items: center;
                     gap: 1.5rem;
-                    padding: .5rem;
-                    width: 55%;
+                    padding: .5rem .75rem .5rem 1rem;
+                    width: 52%;
                     background: $white;
                     border: 2px solid $primary-blue;
                     border-radius: 50px;
@@ -128,14 +129,23 @@ img {
                         align-items: center;
                         justify-content: space-between;
 
-                        input {
-                            width: calc(45% - .25rem - 1px);
+                        .wide {
+                            width: calc(50% - 9px);
+                        }
+
+                        .narrow {
+                            width: calc(50% - 50px);
                         }
 
                         .search-separator {
-                            padding: 0 .25rem;
+                            padding: 0 .75rem;
                             border-left: 1px solid #ddd;
                             align-self: normal;
+                        }
+
+                        .search-pin-icon {
+                            width: 15px;
+                            margin-right: 15px;
                         }
 
                         .submit-cta {
@@ -144,10 +154,137 @@ img {
                         }
                     }
                 }
+
+                .view-all {
+                    a {
+                        border: 1px solid #ddd;
+                        color: #888;
+                        font-size: .8rem;
+                        font-weight: 400;
+                        border-radius: 50px;
+                        padding: .55rem 1.1rem;
+                        text-decoration: none;
+                        @include transition;
+
+                        &:hover {
+                            border: 1px solid #aaa;
+                            color: #333;
+                            @include transition;
+                        }
+                    }
+                }
             }
 
-            &.onground {
-                width: 150px;
+            &.event {
+                width: 175px;
+            }
+        }
+    }
+}
+
+.header-banner-info {
+    .header-banner-info-container {
+        display: flex;
+        justify-content: space-between;
+        // align-items: stretch;
+        padding: 1rem 0 2rem;
+
+        .event-info-wrapper {
+            width: 59%;
+            display: flex;
+            background: linear-gradient(90deg, rgba(18,8,225,1) 0%, rgba(0,166,252,1) 100%);
+            align-items: center;
+            border-radius: 5px;
+
+            .event-info-box {
+                &:not(:last-child) {
+                    border-right: 1px solid $white;
+                }
+            }
+            
+            .event-countdown {
+                font-family: Oswald, Arial, Helvetica, sans-serif;
+                width: 36%;
+                display: flex;
+                flex-direction: row;
+                padding: 0 2%;
+
+                .countdown-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .25rem;
+                    width: 2.75rem;
+                    margin: 0 auto;
+
+                    span {
+                        color: $white;
+                    }
+
+                    .digit {
+                        font-size: 1.85rem;
+                        font-weight: 700;
+                        line-height: 2rem;
+                    }
+
+                    .text {
+                        font-size: .95rem;
+                        font-weight: 200;
+                        text-transform: capitalize;
+                        line-height: 1rem;
+                    }
+                }
+
+                .colon-dots {
+                    font-family: Noto Sans, Arial, Helvetica, sans-serif;
+                    display: flex;
+                    align-items: top;
+                    color: $white;
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    font-weight: 900;
+                }
+            }
+
+            .event-org {
+                width: 28%;
+                padding: 0 1.5rem;
+            }
+
+            .event-details {
+                width: 36%;
+                color: $white;
+                padding: 0 .85rem;
+
+                .date {
+                    font-size: .95rem;
+                    font-weight: 700;
+                }
+
+                .venue {
+                    font-size: .85rem;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .work-ads-wrapper {
+            width: calc(41% - 1rem);
+            border-radius: 5px;
+            display: flex;
+            gap: 1rem;
+            max-height: 95px;
+
+            .work-ads {
+                width: 50%;
+                border-radius: 5px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;                
+                }
             }
         }
     }
