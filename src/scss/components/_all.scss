@@ -189,14 +189,38 @@ img {
         // align-items: stretch;
         padding: 1rem 0 2rem;
 
+        .event-info-wrapper, .work-ads-wrapper .work-ads {
+            box-shadow: 0 0 0 0 transparent;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                box-shadow: 0 0 5px 2px #ddd;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
         .event-info-wrapper {
             width: 59%;
             display: flex;
             background: linear-gradient(90deg, rgba(18,8,225,1) 0%, rgba(0,166,252,1) 100%);
             align-items: center;
             border-radius: 5px;
+            position: relative;
+
+            .radial-gradient-element {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: auto;
+            }
 
             .event-info-box {
+                height: calc(100% - 2rem);
+                align-items: center;
+                display: flex;
+                position: relative;
+                z-index: 2;
+
                 &:not(:last-child) {
                     border-right: 1px solid $white;
                 }
@@ -204,7 +228,7 @@ img {
             
             .event-countdown {
                 font-family: Oswald, Arial, Helvetica, sans-serif;
-                width: 36%;
+                width: 37%;
                 display: flex;
                 flex-direction: row;
                 padding: 0 2%;
@@ -238,11 +262,11 @@ img {
                 .colon-dots {
                     font-family: Noto Sans, Arial, Helvetica, sans-serif;
                     display: flex;
-                    align-items: top;
                     color: $white;
                     font-size: 1.25rem;
-                    line-height: 2rem;
                     font-weight: 900;
+                    line-height: 2.5rem;
+                    align-self: baseline;
                 }
             }
 
@@ -254,7 +278,12 @@ img {
             .event-details {
                 width: 36%;
                 color: $white;
-                padding: 0 .85rem;
+                padding: 0 0.85rem;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                align-items: flex-start;
+                line-height: 1.25rem;
 
                 .date {
                     font-size: .95rem;
@@ -280,10 +309,31 @@ img {
                 border-radius: 5px;
                 overflow: hidden;
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;                
+                &.text-bg {
+                    background-image: url(https://assets.jobstore.my/images/layouts/header_my_banner.png);
+                    background-position: 50% 50%;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 0 2.5rem;
+                    outline: 1px solid #ddd;
+
+                    h4 {
+                        text-transform: uppercase;
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                        font-weight: 700;
+                    }
+                }
+
+                &.image {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;                
+                    }
                 }
             }
         }
