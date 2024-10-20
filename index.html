@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobstore Malaysia - Search Jobs in Malaysia | October 2024</title>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -32,45 +33,26 @@
             <div class="header-nav-container">
                 <div class="header-nav-column quicklinks">
                     <ul>
-                        <li>
-                            <a href="https://www.jobstore.my/">Browse Jobs</a>
-                        </li>
-                        <li>
-                            <a href="https://www.jobstore.my/">Companies</a>
-                        </li>
-                        <li>
-                            <a href="https://www.jobstore.my/">Campus Hiring</a>
-                        </li>
-                        <li>
-                            <a href="https://www.jobstore.my/">Government Jobs</a>
-                        </li>
-                        <li>
-                            <a href="https://www.jobstore.my/">News</a>
-                        </li>
-                        <li>
-                            <a href="https://www.jobstore.my/">Resources</a>
-                        </li>
-                        <li>
-                            <a href="https://www.jobstore.my/">Download App</a>
-                        </li>
+                        <li><a href="https://www.jobstore.my/">Browse Jobs</a></li>
+                        <li><a href="https://www.jobstore.my/">Companies</a></li>
+                        <li><a href="https://www.jobstore.my/">Campus Hiring</a></li>
+                        <li><a href="https://www.jobstore.my/">Government Jobs</a></li>
+                        <li><a href="https://www.jobstore.my/">News</a></li>
+                        <li><a href="https://www.jobstore.my/">Resources</a></li>
+                        <li><a href="https://www.jobstore.my/">Download App</a></li>
                     </ul>
                 </div>
                 <div class="header-nav-column account">
                     <ul>
-                        <li>
-                            <a href="https://www.jobstore.my/login/jobseeker">Sign In</a>
-                        </li>
-                        <li>
-                            <a href="https://www.jobstore.my/login/jobseeker">Register</a>
-                        </li>
-                        <li>
-                            <a class="nav-cta" href="https://www.jobstore.my/login/jobseeker">Employers</a>
-                        </li>
+                        <li><a href="https://www.jobstore.my/login/jobseeker">Sign In</a></li>
+                        <li><a href="https://www.jobstore.my/login/jobseeker">Register</a></li>
+                        <li><a class="nav-cta" href="https://www.jobstore.my/login/jobseeker">Employers</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+
 
     <div class="header header-mobile">
     </div>
@@ -141,7 +123,7 @@
             </a>
             <div class="work-ads-wrapper">
                 <a href="#" class="work-ads text-bg">
-                    <h4>Government Job Vacancy</h4>
+                    <h4 class="work-ads-text">Government Job Vacancy</h4>
                 </a>
                 <a href="#" class="work-ads image">
                     <img src="https://assets.jobstore.my/images/layouts/header_sg_banner.png">
@@ -151,13 +133,337 @@
     </div>
 
     <main class="main">
-        <section>
+        <section class="trending-section">
+            <div class="trending-section-container">
+                <div class="trending-header-wrapper">
+                    <div class="trending-hashtag">
+                        <ul>
+                            <li><a href="#">#Trending Jobs</a></li>
+                            <li><a href="#">#Highest Paying Jobs</a></li>
+                            <li><a href="#">#Internship</a></li>
+                            <li><a href="#">#Recruiter</a></li>
+                        </ul>
+                    </div>
+                    <div class="trending-arrow">
+                        <div class="nav-arrow prev disabled">❮</div>
+                        <div class="nav-arrow next">❯</div>
+                    </div>
+                </div>
+                <div class="trending-job-wrapper">
+                    <div class="trending-job index-1" style="display: flex;">
+                        <div class="trending-job-holder side">
+                            <a href="#" class="job-item">
+                                <div class="job-location johor">
+                                    <p>Johor</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Project Manager - Based in Multiple location Malaysia</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">BCB Berhad</p>
+                                    <div class="company-logo">
+                                        <img src="https://assets.jobstore.my/images/logo_letter/B.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location kuala-lumpur">
+                                    <p>Federal Territory of Kuala Lumpur</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Finance & Accounting Manager/Assistant Finance & Accounting Manager</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">RNA Engineering & Trading Sdn Bhd</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/RNAlogoTransparent.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location selangor">
+                                    <p>Selangor</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Channel Sales Manager (Flexible Packaging Industry)</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">Labthink Sdn. Bhd.</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/042655labthink_logo.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location penang">
+                                    <p>Penang</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Assistant Chief Engineer</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">PARKROYAL Penang Resort</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/logo_PARKROYAL.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="trending-job-holder middle job-slider">
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_ytl.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_js.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_allianz.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_sv.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_aeoncredit.jpg">
+                            </a>
+                        </div>
+                        <div class="trending-job-holder side right">
+                            <a href="#" class="job-item">
+                                <div class="job-location kuala-lumpur">
+                                    <p>Federal Territory of Kuala Lumpur</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Project Site Coordinator cum Site Supervisor</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">Rezzuan, Yeoh & Ong Sdn Bhd</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/ryologo.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location malacca">
+                                    <p>Malacca</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Sales Manager (Kuala Lumpur, Selangor, Penang, Johor Bahru)</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">JV PIONEER (M) SDN BHD</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/083348JVP_LOGO_OFFICE.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location selangor">
+                                    <p>Selangor</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Accounting Manager</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">Eastway Engineering Sdn Bhd</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/logo_ee.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location kuala-lumpur">
+                                    <p>Federal Territory of Kuala Lumpur</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Sales Executive</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">AIM COFFEE (M) SDN BHD</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/aim-coffee.jpeg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="trending-job index-2" style="display: none;">
+                        <div class="trending-job-holder side">
+                            <a href="#" class="job-item">
+                                <div class="job-location johor">
+                                    <p>Johor</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Project Manager - Based in Multiple location Malaysia</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">BCB Berhad</p>
+                                    <div class="company-logo">
+                                        <img src="https://assets.jobstore.my/images/logo_letter/B.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location kuala-lumpur">
+                                    <p>Federal Territory of Kuala Lumpur</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Finance & Accounting Manager/Assistant Finance & Accounting Manager</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">RNA Engineering & Trading Sdn Bhd</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/RNAlogoTransparent.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location selangor">
+                                    <p>Selangor</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Channel Sales Manager (Flexible Packaging Industry)</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">Labthink Sdn. Bhd.</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/042655labthink_logo.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location penang">
+                                    <p>Penang</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Assistant Chief Engineer</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">PARKROYAL Penang Resort</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/logo_PARKROYAL.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="trending-job-holder middle job-slider">
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_ytl.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_js.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_allianz.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_sv.jpg">
+                            </a>
+                            <a href="#" class="job-item-slide">
+                                <img src="assets/images/banner_aeoncredit.jpg">
+                            </a>
+                        </div>
+                        <div class="trending-job-holder side right">
+                            <a href="#" class="job-item">
+                                <div class="job-location kuala-lumpur">
+                                    <p>Federal Territory of Kuala Lumpur</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Project Site Coordinator cum Site Supervisor</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">Rezzuan, Yeoh & Ong Sdn Bhd</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/ryologo.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location malacca">
+                                    <p>Malacca</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Sales Manager (Kuala Lumpur, Selangor, Penang, Johor Bahru)</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">JV PIONEER (M) SDN BHD</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/083348JVP_LOGO_OFFICE.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location selangor">
+                                    <p>Selangor</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Accounting Manager</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">Eastway Engineering Sdn Bhd</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/logo_ee.png">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="job-item">
+                                <div class="job-location kuala-lumpur">
+                                    <p>Federal Territory of Kuala Lumpur</p>
+                                </div>
+                                <div class="job-title">
+                                    <p>Sales Executive</p>
+                                </div>
+                                <div class="job-company">
+                                    <p class="company-name">AIM COFFEE (M) SDN BHD</p>
+                                    <div class="company-logo">
+                                        <img src="assets/images/aim-coffee.jpeg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="featured-section">
+            <div class="featured-section-container">
+                <div class="section-heading">
+                    <h3>Latest Jobs</h3>
+                    <a href="#">See All Jobs&nbsp;❯&nbsp;</a>
+                </div>
+
+                <div class="featured-job-wrapper">
+                    <a href="#" class="featured-box-item">
+                        <div class="featured-box-image">
+                            <img src="assets/images/070904TS_Exim_Logo.png">
+                        </div>
+                        <div class="featured-details-wrapper">
+                            <div class="featured-location selangor">
+                                <p>Selangor</p>
+                            </div>
+                            <div class="featured-title">
+                                <p>SALES CONSULTANT ( MANDARIN SPEAKER )</p>
+                            </div>
+                            <div class="featured-extra">
+                                <p class="extra-text">
+                                    TS EXIM SDN BHD
+                                </p>
+                                <div class="extra-image">
+                                    <img src="assets/images/070904TS_Exim_Logo.png">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
