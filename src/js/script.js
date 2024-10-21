@@ -57,4 +57,13 @@ $(document).ready(function () {
         $('.nav-arrow.next').removeClass('disabled');
         $('.nav-arrow.prev').addClass('disabled');
     });
+
+    //Mobile Menu Toggle
+    $('.mobile-nav-toggle').click(function () {
+        $('.header-mobile-menu').toggleClass('open');
+    });
+    
+    $('.logo-toggle').click(function () {
+        $('.header-mobile-menu').removeClass('open');
+    });
 });

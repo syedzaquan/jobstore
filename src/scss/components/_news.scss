@@ -1,0 +1,29 @@
+.news-section {
+    padding: 2rem 0;
+
+    @media (max-width: 480px) {
+        padding: 2rem 0 4rem;
+    }
+
+    .news-section-container {
+        .news-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            width: 100%;
+            justify-content: space-between;
+
+            @media (max-width: 1024px) {
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
+                padding-bottom: 5rem;
+            }
+
+            @media (max-width: 480px) {
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.trending-section {
+    background-color: #dde7f0;
+    padding: 1.5rem 0 2rem;
+
+    .trending-section-container {
+        .trending-header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 1.5rem;
+
+            @media (max-width: 480px) {
+                flex-direction: column;
+            }
+
+            .trending-hashtag {
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
+                ul {
+                    display: flex;
+                    gap: 2rem;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    @media (max-width: 480px) {
+                        flex-wrap: nowrap;
+                        overflow-x: auto;
+                        width: auto;
+                        gap: .75rem;
+                        margin-bottom: .75rem;
+                        padding: 1rem 0 1.5rem;
+                    }
+
+                    li {
+                        @media (max-width: 480px) {
+                            flex: 0 0 auto;
+                            
+                        }
+                        a {
+                            line-height: 1rem;
+                            font-size: .9rem;
+                            font-weight: 700;
+
+                            @media (max-width: 480px) {
+                                padding: .25rem 1rem;
+                                border-radius: 100px;
+                                border: 1px solid $black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .trending-arrow {
+                display: flex;
+                gap: 0 .75rem;
+
+                .nav-arrow {
+                    height: 35px;
+                    width: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1rem;
+                    line-height: 33px;
+                    color: #333;
+                    border-radius: 200px;
+                    background-color: #f2f2fd;
+                    border: 1px solid #e6e5fc;
+                    cursor: pointer;
+                    @include transition;
+
+                    &.disabled {
+                        background: #f1f1f1;
+                        border: 1px solid #e6e5fc;
+                        cursor: default;
+                        color: #ddd;
+                    }
+
+                    &:hover {
+                        border: 1px solid #d0cef9;
+                        @include transition;
+                    }
+                }
+            }
+        }
+
+        .trending-job-wrapper {
+            min-height: 375px;
+
+            .index-1 {
+                .trending-job-holder {
+                    &.right {
+                        @media (min-width: 481px) and (max-width: 820px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .index-2 {
+                .trending-job-holder {
+                    &.left {
+                        @media (min-width: 481px) and (max-width: 820px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .trending-job {
+                position: relative;
+                display: flex;
+                // gap: 1rem;
+                justify-content: space-between;
+                width: 100%;
+
+                @media (max-width: 480px) {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .trending-job-holder {
+                    display: flex;
+                    flex-wrap: wrap;
+                    // gap: 1rem;
+                    // align-items: stretch;
+                    // justify-content: space-between;
+
+                    &.side {
+                        width: 40%;
+                        gap: 1rem 0;
+
+                        @media (max-width: 820px) {
+                            width: 66%;
+                        }
+
+                        @media (max-width: 480px) {
+                            width: calc(100% + 1rem);
+                        }
+
+                        &.right {
+                            justify-content: flex-end;
+
+                            @media (max-width: 480px) {
+                                justify-content: unset;
+                            }
+                        }
+                    }
+
+                    &.middle {
+                        width: 20%;
+                        height: 367px;
+                        display: inline-block;
+
+                        @media (max-width: 820px) {
+                            width: 34%;
+                        }
+
+                        @media (max-width: 480px) {
+                            width: 100%;
+                            height: 485px;
+                        }
+
+                        .job-item-slide {
+                            width: 100%;
+                            height: 100%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

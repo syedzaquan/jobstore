@@ -4,6 +4,51 @@
     line-height: 50px;
     text-align: center;
     background: url('https://assets.jobstore.my/images/header/jobseeker_header_purple_bg.png') #f7f7f7 no-repeat center / cover;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+
+    &.mobile {
+        display: none;
+        @media (max-width: 480px) {
+            margin: 1.5rem auto;
+            display: block;
+            height: auto;
+            line-height: normal;
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px #ddd;
+            border-radius: 10px;
+            width: 90%;
+            background: url('https://assets.jobstore.my/images/header/jobseeker_header_banner_bg.png') no-repeat center left 20%/cover;
+        }
+
+        a {
+            .header-ribbon-container {
+                padding: 1rem;
+                align-items: center;
+                height: 100px;
+                .ribbon-text {
+                    width: 50%;
+
+                    &:last-child {
+                        flex-direction: column;
+
+                        h4 {
+                            margin-right: 0;
+                            text-align: right;
+                            margin-bottom: .5rem;
+                        }
+
+                        .ribbon-prompt {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .header-ribbon-container {
         display: flex;
         justify-content: center;
@@ -13,9 +58,17 @@
             display: flex;
             gap: .75rem;
 
+            @media (max-width: 820px) {
+                gap: 0;
+            }
+
             h4 {
                 color: #fff;
                 font-size: 1rem;
+
+                @media (max-width: 820px) {
+                    margin-right: 1rem;
+                }
             }
 
             &:last-child {
